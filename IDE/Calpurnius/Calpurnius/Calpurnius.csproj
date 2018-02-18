@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D459338-8D05-4CE6-963F-316CB52E519E}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scenario</RootNamespace>
+    <AssemblyName>Calpurnius</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sandbox.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Sandbox.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Sandbox.Game">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Sandbox.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Sandbox.Graphics">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\Sandbox.Graphics.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SpaceEngineers.Game, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\SpaceEngineers.Game.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SpaceEngineers.ObjectBuilders, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\SpaceEngineers.ObjectBuilders.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="VRage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRage.Game, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="VRage.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Library.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRage.Math, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Math.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRage.Render, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Render.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VRage.Scripting, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\SpaceEngineers\Bin64\VRage.Scripting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Audio\allTechUnlocked.xwm" />
+    <Content Include="..\..\..\Audio\armorVehicles.xwm" />
+    <Content Include="..\..\..\Audio\BestCustomer.xwm" />
+    <Content Include="..\..\..\Audio\BigSwitch.xwm" />
+    <Content Include="..\..\..\Audio\Carmen.xwm" />
+    <Content Include="..\..\..\Audio\cavern.xwm" />
+    <Content Include="..\..\..\Audio\CheekiBreeki.xwm" />
+    <Content Include="..\..\..\Audio\ConnectionLostSound.xwm" />
+    <Content Include="..\..\..\Audio\convoyArrivedSafely.xwm" />
+    <Content Include="..\..\..\Audio\convoyDispatched1.xwm" />
+    <Content Include="..\..\..\Audio\convoyDispatched2.xwm" />
+    <Content Include="..\..\..\Audio\convoyDispatched3.xwm" />
+    <Content Include="..\..\..\Audio\convoyUnderThreat.xwm" />
+    <Content Include="..\..\..\Audio\disengagingFromHostile.xwm" />
+    <Content Include="..\..\..\Audio\DontBreatheIn.xwm" />
+    <Content Include="..\..\..\Audio\droneDisarmed.xwm" />
+    <Content Include="..\..\..\Audio\EnemyDetectedMovingToIntercept.xwm" />
+    <Content Include="..\..\..\Audio\facilityDetectedHostile.xwm" />
+    <Content Include="..\..\..\Audio\FaintPowerSignature.xwm" />
+    <Content Include="..\..\..\Audio\FireEngine.xwm" />
+    <Content Include="..\..\..\Audio\gasStorageUnlocked.xwm" />
+    <Content Include="..\..\..\Audio\HackFinished.xwm" />
+    <Content Include="..\..\..\Audio\HackingSound.xwm" />
+    <Content Include="..\..\..\Audio\hostileDisappeared.xwm" />
+    <Content Include="..\..\..\Audio\hostileStillPresent.xwm" />
+    <Content Include="..\..\..\Audio\intruderDetectedGCorp.xwm" />
+    <Content Include="..\..\..\Audio\intruderRobot.xwm" />
+    <Content Include="..\..\..\Audio\intrudersMustBeDestroyed.xwm" />
+    <Content Include="..\..\..\Audio\LavaLoop.xwm" />
+    <Content Include="..\..\..\Audio\MilitaryPatrolInitiated.xwm" />
+    <Content Include="..\..\..\Audio\NewMikiScrapsOpen.xwm" />
+    <Content Include="..\..\..\Audio\NotAuthorisedDeployDefences.xwm" />
+    <Content Include="..\..\..\Audio\oxygenFarmUnlocked.xwm" />
+    <Content Include="..\..\..\Audio\oxygenGeneratorUnlocked.xwm" />
+    <Content Include="..\..\..\Audio\PartOfBuilding.xwm" />
+    <Content Include="..\..\..\Audio\powerSignatureBehindWall.xwm" />
+    <Content Include="..\..\..\Audio\powerupClipped.xwm" />
+    <Content Include="..\..\..\Audio\PursuitEvaded.xwm" />
+    <Content Include="..\..\..\Audio\sensorsLostTrack.xwm" />
+    <Content Include="..\..\..\Audio\StopCallingMeTius.xwm" />
+    <Content Include="..\..\..\Audio\TargetFleeingPursuit.xwm" />
+    <Content Include="..\..\..\Audio\targetFoundDronesAttack.xwm" />
+    <Content Include="..\..\..\Audio\targetIdentifiedUnitsConverge.xwm" />
+    <Content Include="..\..\..\Audio\targetLost.xwm" />
+    <Content Include="..\..\..\Audio\TellAllFriends.xwm" />
+    <Content Include="..\..\..\Audio\ThisIsGoodScrap.xwm" />
+    <Content Include="..\..\..\Audio\TiredOfGrindingCrap.xwm" />
+    <Content Include="..\..\..\Audio\unknownHostileOnScanners.xwm" />
+    <Content Include="..\..\..\Audio\unlockAtmospherics.xwm" />
+    <Content Include="..\..\..\Audio\unlockedMissiles.xwm" />
+    <Content Include="..\..\..\Audio\WeCrushDown.xwm" />
+    <Content Include="..\..\..\Audio\welcome2Gcorp.xwm" />
+    <Content Include="..\..\..\Audio\WelcomeMikiScrap.xwm" />
+    <Content Include="..\..\..\Audio\WhereDoYouGetScrapMetal.xwm" />
+    <Content Include="..\..\..\Audio\WhereIsThatFrom.xwm" />
+    <Content Include="..\..\..\Data\Audio.sbc">
+      <Link>Audio.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\CubeBlocks.sbc">
+      <Link>CubeBlocks.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\Environment.sbc">
+      <Link>Environment.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\Factions.sbc">
+      <Link>Factions.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\InteriorTurretNerf.sbc">
+      <Link>InteriorTurretNerf.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\LCDTextures.sbc">
+      <Link>LCDTextures.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\Particles.sbc">
+      <Link>Particles.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\SoundBlock.sbc">
+      <Link>SoundBlock.sbc</Link>
+    </Content>
+    <Content Include="..\..\..\Data\UnusedEffects.txt">
+      <Link>UnusedEffects.txt</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Data\Scripts\Scenario\AbstractCore.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\AbstractMissionSystem.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\AudioRelay.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\BackupGroup.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\BaseManager.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\CalAudioClip.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\CalCore.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\CalFactions.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\CalMissionSystem.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\CargoType.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\Convoy.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\ConvoyAir.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\ConvoyGround.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\ConvoySpawner.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\GCorpBase.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\HeatSystem.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\HUDTextAPI.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\IronComponent.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\MikiScrap.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\MikiScrapManager.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\NetworkComms.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\NpcGroup.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\NpcGroupManager.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\CalPrefabFactory.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\ResearchControl.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\ResearchHacking.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\SaveArrivalObserver.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\ShipSize.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\TechGroup.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\Turret.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\TurretDualAxis.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\TurretManager.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\Calpurnius\TurretSingleAxis.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\DamageObserver.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\DamageSensor.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\DuckExtensions.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\DuckUtils.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\DustStorm.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\AbstractFaction.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\IAudioClip.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\IFactionShips.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\IFaction.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\IModSystemRegistry.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\InterruptingAudioSystem.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\MachineType.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\ModLog.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\ModSystemCloseable.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\ModSystemRapidUpdatable.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\ModSystemUpdatable.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\NoFactionShips.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\PrefabGrid.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\QueuedAudioSystem.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\RoleAndUnitType.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\UnitRole.cs" />
+    <Compile Include="..\..\..\Data\Scripts\Scenario\UnitType.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

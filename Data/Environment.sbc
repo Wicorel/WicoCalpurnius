@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Definition xsi:type="EnvironmentDefinition">
+    <Id>
+      <TypeId>EnvironmentDefinition</TypeId>
+      <SubtypeId>Default</SubtypeId>
+    </Id>
+
+    <SunProperties>
+      <BackLightIntensity1>0.05</BackLightIntensity1>
+      <BackLightIntensity2>0.05</BackLightIntensity2>
+      <EnvironmentLight>
+        <AmbientForwardPass>0.0</AmbientForwardPass>
+        <ShadowFadeoutMultiplier>0.005</ShadowFadeoutMultiplier>
+      </EnvironmentLight>
+    </SunProperties>
+  </Definition>
+</Definitions>

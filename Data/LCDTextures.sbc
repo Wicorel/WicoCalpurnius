@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LCDTextures>
+    <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>Galactic Corporation Logo</SubtypeId>
+      </Id>
+     <TexturePath>Textures\Models\gcorp_logo.dds</TexturePath>
+    </LCDTextureDefinition>
+	
+	<LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>Automation Simplified</SubtypeId>
+      </Id>
+     <TexturePath>Textures\Models\automation_simplified.dds</TexturePath>
+    </LCDTextureDefinition>
+	
+	 <LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>Clouds</SubtypeId>
+      </Id>
+     <TexturePath>Textures\Models\Clouds.dds</TexturePath>
+    </LCDTextureDefinition>
+	
+	<LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>MRE Logo</SubtypeId>
+      </Id>
+     <TexturePath>Textures\Models\MarsResearchExpedition.dds</TexturePath>
+    </LCDTextureDefinition>
+	
+	<LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>Firefly</SubtypeId>
+      </Id>
+     <TexturePath>Textures\Models\ff512.dds</TexturePath>
+    </LCDTextureDefinition>
+	
+	<LCDTextureDefinition>
+      <Id>
+        <TypeId>LCDTextureDefinition</TypeId>
+        <SubtypeId>MikiScrap</SubtypeId>
+      </Id>
+     <TexturePath>Textures\Models\MikiScrap.dds</TexturePath>
+    </LCDTextureDefinition>
+	
+  </LCDTextures>
+  
+</Definitions>

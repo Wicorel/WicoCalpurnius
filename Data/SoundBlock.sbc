@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SoundCategories>
+    <SoundCategory>
+      <Id>
+        <TypeId>SoundCategoryDefinition</TypeId>
+        <SubtypeId>EFM</SubtypeId>
+      </Id>
+      <Sounds>
+		<SoundDesc Id="WelcomeToGcorp" SoundName="Welcome to G-Corp" />
+		<SoundDesc Id="IntruderDetectedGCorp" SoundName="GCorp Intruder Detected" />
+		<SoundDesc Id="NotAuthorisedDeployDefences" SoundName="GCorp Not Authorised" />
+		<SoundDesc Id="MineClosed" SoundName="GCorp Mine Closed" />
+		<SoundDesc Id="PowerUpClipped" SoundName="GCorp Drone PowerUp" />
+		<SoundDesc Id="AirplaneSound" SoundName="Airplane Sound" />	   
+	    <SoundDesc Id="FlightResearchExhibition" SoundName="Flight Research Exhibition" />
+		<SoundDesc Id="IntruderRobot" SoundName="Mech Intruder" />
+		<SoundDesc Id="IntrudersMustBeDestroyedRobot" SoundName="Mech Intruders Must Be Destroyed" />
+		<SoundDesc Id="BigSwitch" SoundName="Big Switch" />
+		<SoundDesc Id="Carmen" SoundName="Carmen" />
+		<SoundDesc Id="LavaLoop" SoundName="LavaLoop" />
+		<SoundDesc Id="CheekiBreeki" SoundName="CheekiBreeki" />
+		<SoundDesc Id="FireEngine" SoundName="FireEngine" />
+      </Sounds>
+    </SoundCategory>
+  </SoundCategories>
+</Definitions>

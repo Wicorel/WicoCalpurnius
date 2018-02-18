@@ -1,0 +1,870 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Sounds>
+	
+	 <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Cavern</SubtypeId>
+      </Id>
+      <MaxDistance>300</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>true</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/cavern.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	 <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ConvoyArrivedSafely</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.4</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/convoyArrivedSafely.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ConvoyDispatched1</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.4</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/convoyDispatched1.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ConvoyDispatched2</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.4</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/convoyDispatched2.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ConvoyDispatched3</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.4</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/convoyDispatched3.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ConvoyUnderThreat</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/convoyUnderThreat.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>DisengagingFromHostile</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/disengagingFromHostile.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>DroneDisarmed</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/droneDisarmed.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>EnemyDetectedMovingToIntercept</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/EnemyDetectedMovingToIntercept.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>FacilityDetectedHostile</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/facilityDetectedHostile.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>HostileDisappeared</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/hostileDisappeared.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>HostileStillPresent</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/hostileStillPresent.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>IntruderRobot</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>2.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/intruderRobot.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>IntrudersMustBeDestroyedRobot</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>2.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/intrudersMustBeDestroyed.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>MilitaryPatrolInitiated</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/MilitaryPatrolInitiated.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>OxygenGeneratorUnlocked</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/oxygenGeneratorUnlocked.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>PowerUpClipped</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/powerupClipped.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>TargetFleeingPursuit</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/TargetFleeingPursuit.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>TargetFoundDronesAttack</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/targetFoundDronesAttack.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>TargetIdentifiedUnitsConverge</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/targetIdentifiedUnitsConverge.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>TargetLost</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/targetLost.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>UnknownHostileOnScanners</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/unknownHostileOnScanners.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>UnlockAtmospherics</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/unlockAtmospherics.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>UnlockedMissiles</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/unlockedMissiles.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>WelcomeToGcorp</SubtypeId>
+      </Id>
+      <MaxDistance>200</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/welcome2Gcorp.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>OxygenFarmUnlocked</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/oxygenFarmUnlocked.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>NotAuthorisedDeployDefences</SubtypeId>
+      </Id>
+      <MaxDistance>250</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/NotAuthorisedDeployDefences.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>IntruderDetectedGCorp</SubtypeId>
+      </Id>
+      <MaxDistance>250</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/intruderDetectedGCorp.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>GasStorageUnlocked</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/gasStorageUnlocked.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+		<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>AllTechUnlocked</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/allTechUnlocked.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>PowerSignatureBehindWall</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.5</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/powerSignatureBehindWall.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>BigSwitch</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/BigSwitch.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArmorVehicles</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.8</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/armorVehicles.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>FaintPowerSignature</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>0.8</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/FaintPowerSignature.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>PursuitEvaded</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/PursuitEvaded.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>SensorsLostTrack</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/sensorsLostTrack.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>HackingSound</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/HackingSound.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ConnectionLostSound</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/ConnectionLostSound.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>HackFinished</SubtypeId>
+      </Id>
+      <MaxDistance>1</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/HackFinished.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>Carmen</SubtypeId>
+      </Id>
+      <MaxDistance>600</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>true</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/Carmen.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+		<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>BestCustomer</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/BestCustomer.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>DontBreatheIn</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/DontBreatheIn.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>LavaLoop</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/LavaLoop.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>NewMikiScrapsOpen</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/NewMikiScrapsOpen.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>PartOfBuilding</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/PartOfBuilding.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>TellAllFriends</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/TellAllFriends.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ThisIsGoodScrap</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/ThisIsGoodScrap.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>TiredOfGrindingCrap</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/TiredOfGrindingCrap.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>WeCrushDown</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/WeCrushDown.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>WelcomeMikiScrap</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/WelcomeMikiScrap.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>WhereDoYouGetScrapMetal</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/WhereDoYouGetScrapMetal.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>WhereIsThatFrom</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/WhereIsThatFrom.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>CheekiBreeki</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/CheekiBreeki.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	<Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>FireEngine</SubtypeId>
+      </Id>
+      <MaxDistance>500</MaxDistance>
+      <Volume>1.0</Volume>
+      <Loopable>false</Loopable>
+      <Pitch>0</Pitch>
+      <Waves>
+        <Wave Type="D2">
+          <Start>Audio/FireEngine.xwm</Start>
+        </Wave>
+      </Waves>
+    </Sound>
+	
+	
+	</Sounds>
+</Definitions>

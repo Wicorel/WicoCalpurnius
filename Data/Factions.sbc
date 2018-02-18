@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<!--
+  Template for fraction:
+  <Faction Tag="insert_tagName"(use more than 3 letters. With 3 it is possible to conflict with player tags) Founder="insert_founderName">
+     <Id>
+       <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+       <SubtypeId>Insert_SubTypeName</SubtypeId>
+     </Id>
+    <DisplayName>Insert_KeyToFractionDisplayName</DisplayName>
+    <AcceptHumans>true or false</AcceptHumans>
+    <AutoAcceptMember>true or false</AutoAcceptMember>
+    <EnableFriendlyFire>true or false</EnableFriendlyFire> (this one does not work fully. Ask Cestmir for more details)
+    <IsDefault>true or false</IsDefault> (Indicates if faction should be created in the world by default. Its owner will be visible in Ownership dropdown.
+    <DefaultRelation>Enemies | Neutral</DefaultRelation> (Indicates default state of the faction to everyone else. If faction is enemies by default, it will ignore peace(which is neutral in code) of 
+                                                          other factions). PS. If not set than default setting from game config will be used (per game setting).
+                                                          WARNING: in code currently Neutral state is Peace state in gameplay sense.   
+  </Faction>
+    -->
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+  
+  <Faction Tag="PLAYER" Founder="DuckRoll">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>Players</SubtypeId>
+      </Id>
+      <DisplayName>Players</DisplayName>
+      <IsDefault>true</IsDefault>
+      <AcceptHumans>true</AcceptHumans>
+      <AutoAcceptMember>true</AutoAcceptMember>
+      <EnableFriendlyFire>true</EnableFriendlyFire>
+    </Faction>
+
+    <Faction Tag="GCORP" Founder="Galactic Corporation">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>GCorp</SubtypeId>
+      </Id>
+      <DisplayName>Galactic Corporation</DisplayName>
+      <IsDefault>true</IsDefault>
+    </Faction>
+	
+	 <Faction Tag="MIKI" Founder="Miki Scrap">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>MikiScrap</SubtypeId>
+      </Id>
+      <DisplayName>Miki Scrap</DisplayName>
+      <IsDefault>true</IsDefault>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <EnableFriendlyFire>false</EnableFriendlyFire>
+	  <DefaultRelation>Neutral</DefaultRelation>
+    </Faction>
+    
+    <Faction Tag="RR" Founder="Jimmie Thomas">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>RR</SubtypeId>
+      </Id>
+      <DisplayName>Rockin' Robin</DisplayName>
+      <IsDefault>true</IsDefault>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <EnableFriendlyFire>false</EnableFriendlyFire>
+      <DefaultRelation>Neutral</DefaultRelation>
+    </Faction>
+
+    <Faction Tag="PLAT" Founder="Bill Gates">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>Plateau</SubtypeId>
+      </Id>
+      <DisplayName>Plateau Folks</DisplayName>
+      <IsDefault>true</IsDefault>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <EnableFriendlyFire>false</EnableFriendlyFire>
+      <DefaultRelation>Neutral</DefaultRelation>
+    </Faction>
+
+    <Faction Tag="BAD1" Founder="BADLANDS1">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>BADLANDS1</SubtypeId>
+      </Id>
+      <DisplayName>BADLANDS1</DisplayName>
+      <IsDefault>true</IsDefault>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <EnableFriendlyFire>false</EnableFriendlyFire>
+      <DefaultRelation>Neutral</DefaultRelation>
+    </Faction>
+    <Faction Tag="BAD2" Founder="BADLANDS2">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>BADLANDS2</SubtypeId>
+      </Id>
+      <DisplayName>BADLANDS2</DisplayName>
+      <IsDefault>true</IsDefault>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <EnableFriendlyFire>false</EnableFriendlyFire>
+      <DefaultRelation>Neutral</DefaultRelation>
+    </Faction>
+
+  </Factions>
+</Definitions>
