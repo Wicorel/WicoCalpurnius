@@ -101,9 +101,10 @@ namespace Scenario.Calpurnius
 				InitiateDisbandProtocols();
 			}
 			else if ((GroupState == NpcGroupState.Travelling || GroupState == NpcGroupState.InCombat)
-			         && Vector3D.Distance(Destination, leader.GetPosition()) < 100.0)
-			{
-				ArrivalObserver.GroupArrivedIntact();
+                     && Vector3D.DistanceSquared(Destination, leader.GetPosition()) < 200.0 * 200) // increase to 200 to allow for variations in height.
+  //                     && Vector3D.Distance(Destination, leader.GetPosition()) < 100.0)
+            {
+                ArrivalObserver.GroupArrivedIntact();
 				audioSystem.PlayAudioRandomChance(0.1, CalAudioClip.ConvoyArrivedSafely);
 				GroupState = NpcGroupState.Disbanding;
 				InitiateDisbandProtocols();
