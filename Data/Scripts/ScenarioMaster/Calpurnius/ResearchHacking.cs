@@ -10,11 +10,16 @@ namespace Scenario.Calpurnius
 	public class ResearchHacking : ModSystemUpdatable
 	{
 		public const string SeTextColor = "<color=202,228,241>";
-		private HUDTextAPI.HUDMessage hackBar = new HUDTextAPI.HUDMessage(100, 30, new Vector2D(-0.95, 0.95), "");
-		private readonly HUDTextAPI.HUDMessage hackInterrupted = new HUDTextAPI.HUDMessage(100, 30, new Vector2D(-0.95, 0.95),
-			SeTextColor +"CONNECTION LOST");
+        //        private HUDTextAPI.HUDMessage hackBar = new HUDTextAPI.HUDMessage(100, 30, new Vector2D(-0.95, 0.95), "");
+        //        private readonly HUDTextAPI.HUDMessage hackInterrupted = new HUDTextAPI.HUDMessage(100, 30, new Vector2D(-0.95, 0.95),
+        //            SeTextColor + "CONNECTION LOST");
 
-		private const int HackingRangeSquared = 5*5; // 5 meters
+        // Change for Version 10: Move more to center to avoid chromatic aberation in 1.186 in the edges
+        private HUDTextAPI.HUDMessage hackBar = new HUDTextAPI.HUDMessage(100, 30, new Vector2D(-0.5, 0.5), "");
+        private readonly HUDTextAPI.HUDMessage hackInterrupted = new HUDTextAPI.HUDMessage(100, 30, new Vector2D(-0.5, 0.5),
+            SeTextColor + "CONNECTION LOST");
+
+        private const int HackingRangeSquared = 5*5; // 5 meters
 		private const int HackingBarTicks = 26;
 		private readonly ResearchControl researchControl;
 		private readonly HUDTextAPI hudTextApi;
@@ -35,6 +40,8 @@ namespace Scenario.Calpurnius
 
 		internal void InitHackingLocations()
 		{
+
+            // TODO: These are Scenario Specific
 			AddHackingLocation(TechGroup.AtmosphericEngines, new Vector3D(1854774.5,-2005846.88,1325410.5));
 			AddHackingLocation(TechGroup.GasStorage, new Vector3D(1869167.75,-2004920.12,1316376.38));
 			AddHackingLocation(TechGroup.Rockets, new Vector3D(1843300.12,-1996436.5,1324474.12));
