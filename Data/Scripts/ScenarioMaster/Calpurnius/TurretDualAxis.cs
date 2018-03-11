@@ -16,7 +16,7 @@ namespace Scenario.Calpurnius
 	/// </summary>
 	public class TurretDualAxis : ITurret
 	{
-		private const int Range = 75;
+		private int Range = 75;
 		private readonly IMyRemoteControl remoteControl;
 		private readonly IMyCubeGrid bodyGrid;
 		private readonly IMyMotorStator azimuthRotor;
@@ -28,14 +28,15 @@ namespace Scenario.Calpurnius
 		private bool spoken;
 
 		internal TurretDualAxis(IMyRemoteControl remoteControl, IMyCubeGrid bodyGrid, IMyMotorStator azimuthRotor,
-			List<IMyMotorStator> elevationRotors, List<IMyUserControllableGun> weapons)
+			List<IMyMotorStator> elevationRotors, List<IMyUserControllableGun> weapons, int range=75)
 		{
 			this.remoteControl = remoteControl;
 			this.bodyGrid = bodyGrid;
 			this.azimuthRotor = azimuthRotor;
 			this.elevationRotors = elevationRotors;
 			this.weapons = weapons;
-			position = bodyGrid.GetPosition();
+            Range = range;
+//			position = bodyGrid.GetPosition();
 		}
 
 		public void Update60()
@@ -46,7 +47,7 @@ namespace Scenario.Calpurnius
 //				return; // No point bothering to remove from the list, it will disappear next time the game reloads
 			}
 
-			playerTarget = DuckUtils.GetNearestPlayerToPosition(position, Range);
+			playerTarget = DuckUtils.GetNearestPlayerToPosition(bodyGrid.GetPosition(), Range);
 			if (playerTarget != null)
 			{
 				IHitInfo hitInfo;
@@ -123,10 +124,11 @@ namespace Scenario.Calpurnius
 //				return; // No point bothering to remove from the list, it will disappear next time the game reloads
 			}
 
-			TurnToFacePosition(playerTarget.GetPosition());
-		}
+            TurnToFacePosition(playerTarget.Character.WorldAABB.Center);
+            //			TurnToFacePosition(playerTarget.GetPosition());
+        }
 
-		private void StopAllRotors()
+        private void StopAllRotors()
 		{
 			azimuthRotor.SetValue("Velocity", 0f);
 			foreach (var rotor in elevationRotors)

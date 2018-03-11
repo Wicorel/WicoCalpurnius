@@ -11,20 +11,25 @@ namespace Scenario.Calpurnius
 		private readonly IMyRemoteControl remoteControl;
 		private readonly IMyCubeGrid rotorMountedGrid;
 		private readonly IMyMotorStator rotor;
-		private readonly Vector3D position; // Turrets like this don't move
+//		private readonly Vector3D position; // Turrets like this don't move
 		private bool arePlayersNear;
+        private int Range = 50; // max sensor range
 
-		internal TurretSingleAxis(IMyRemoteControl remoteControl, IMyCubeGrid rotorMountedGrid, IMyMotorStator rotor)
+
+        internal TurretSingleAxis(IMyRemoteControl remoteControl, IMyCubeGrid rotorMountedGrid, IMyMotorStator rotor, int range=50)
 		{
 			this.remoteControl = remoteControl;
 			this.rotorMountedGrid = rotorMountedGrid;
 			this.rotor = rotor;
-			position = rotorMountedGrid.GetPosition();
+            Range = range;
+//			position = rotorMountedGrid.GetPosition();
 		}
 
 		public void Update60()
 		{
-			var player = DuckUtils.GetNearestPlayerToPosition(position, 500);
+            double useRange = Range * 4;
+            useRange = Math.Min(Range, 800);
+			var player = DuckUtils.GetNearestPlayerToPosition(rotorMountedGrid.GetPosition(), useRange);
 			arePlayersNear = player != null;
 		}
 
@@ -41,7 +46,9 @@ namespace Scenario.Calpurnius
 //				return; // No point bothering to remove from the list, it will disappear next time the game reloads
 			}
 
-			var player = DuckUtils.GetNearestPlayerToPosition(position, 300);
+            double useRange = Range * 2;
+            useRange = Math.Min(Range, 800);
+            var player = DuckUtils.GetNearestPlayerToPosition(rotorMountedGrid.GetPosition(), useRange);
 			if (player == null)
 			{
 				return;

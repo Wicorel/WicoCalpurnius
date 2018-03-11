@@ -12,12 +12,13 @@ namespace Scenario.Calpurnius
 		{
 			if (grid.IsStatic)
 			{
-				return;
-			}
-			
-			//if (grid.IsAliveAndGCorpControlled()) ?? do we need this for turrets?
+                // change in SE 1.186.  Small grids in voxels are no longer 'static'
+                //				return;
+            }
 
-			var azimuthRotors = FindRotorsWithSubgrid(grid, "TURRET_ROTOR");
+            //if (grid.IsAliveAndGCorpControlled()) ?? do we need this for turrets?
+
+            var azimuthRotors = FindRotorsWithSubgrid(grid, "TURRET_ROTOR");
 			if (azimuthRotors.Count > 0)
 			{
 				var azimuthRotor = azimuthRotors[0];
@@ -86,8 +87,19 @@ namespace Scenario.Calpurnius
 
 		public override void Update60()
 		{
-			// Lets turrets check around for enemies, but they mostly sleep until needed
-			foreach (var turret in turrets)
+            /*
+                        if(!bShownTurretCount)// && turretshowncount < 5)
+                        {
+                            turretshowncount++;
+                            if(turretshowncount >= 4)
+                            {
+                                bShownTurretCount = true;
+                                MyAPIGateway.Utilities.ShowNotification("#rotor Turrest=: " + turrets.Count, 2000, MyFontEnum.DarkBlue);
+                            }
+                        }
+                        */
+            // Lets turrets check around for enemies, but they mostly sleep until needed
+            foreach (var turret in turrets)
 			{
 				turret.Update60();
 			}
