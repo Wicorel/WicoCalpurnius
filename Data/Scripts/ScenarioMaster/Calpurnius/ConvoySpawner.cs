@@ -13,7 +13,10 @@ namespace Scenario.Calpurnius
 	internal class ConvoySpawner : ModSystemUpdatable
 	{
 		public static readonly bool DebugConvoys = true;
-		private readonly QueuedAudioSystem audioSystem;
+        public static readonly bool ForceGroundOnly = false;
+        public static readonly bool ForceAirOnly = false;
+
+        private readonly QueuedAudioSystem audioSystem;
 		private readonly List<IMyRemoteControl> spawningBases = new List<IMyRemoteControl>();
 		private readonly Random random = new Random();
 		private DateTime nextSpawnTime;
@@ -133,9 +136,13 @@ namespace Scenario.Calpurnius
 
 				var distSq = Vector3D.DistanceSquared(spawningBase.PositionComp.GetPosition(), positionToSpawnNearTo);
 				baseDistances.Add(distSq, spawningBase);
-			}
 
-			var sortedDistances = baseDistances.Keys.ToList();
+                // todo: Add Space
+                if (DebugConvoys && ForceGroundOnly && !spawningBase.CustomName.Contains("GROUND")) continue;
+                if (DebugConvoys && ForceAirOnly && spawningBase.CustomName.Contains("GROUND")) continue;
+            }
+
+            var sortedDistances = baseDistances.Keys.ToList();
 			sortedDistances.Sort();
 
 			foreach (var distance in sortedDistances)
