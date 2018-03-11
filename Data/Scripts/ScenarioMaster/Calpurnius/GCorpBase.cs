@@ -35,20 +35,26 @@ namespace Scenario.Calpurnius
 		internal void Update()
 		{
 			// TODO: need a reference to the whole base grid to properly determine ownership
+            // TODO: use faction info from faction definition.
+
 			if (!RemoteControl.IsControlledByFaction("GCORP"))
 			{
 //				return; // Maybe remove from list of bases?
 			}
 
-			var player = DuckUtils.GetNearestPlayerToPosition(RemoteControl.GetPosition(), 1000);
+
+            // TODO: use faction info from faction definition.
+            var player = DuckUtils.GetNearestPlayerToPosition(RemoteControl.GetPosition(), 1000);
 			if (!DebugStopBackupGroups && player != null)
 			{
 				if (lastBackupRespondTime + BackupTimeDelay < MyAPIGateway.Session.GameDateTime)
 				{
-					SpawnHelperPatrol(player);
+                    // TODO: use faction info from faction definition.
+                    SpawnHelperPatrol(player);
 					waitingOnBackup = true;
 					lastBackupRespondTime = MyAPIGateway.Session.GameDateTime;
-					audioSystem.PlayAudio(CalAudioClip.FacilityDetectedHostile, CalAudioClip.GCorpFacilityThreatened);
+                    // TODO: use faction info from faction definition.
+                    audioSystem.PlayAudio(CalAudioClip.FacilityDetectedHostile, CalAudioClip.GCorpFacilityThreatened);
 				}
 			}
 		}
@@ -65,15 +71,17 @@ namespace Scenario.Calpurnius
 
 		internal Vector3D GetBackupPosition()
 		{
-			return RemoteControl.GetPosition() + RemoteControl.GetNaturalGravity() * -5f; //50m above us
+            // TODO: Get information from base info
+            return RemoteControl.GetPosition() + RemoteControl.GetNaturalGravity() * -5f; //50m above us
 		}
 
 		private void SpawnHelperPatrol(IMyPlayer player)
 		{
 			var playerPos = player.GetPosition();
 			var playerNaturalGravity = marsPlanet.GetGravityAtPoint(playerPos);
-			//TODO does perpendicularDistance maybe need to be normalised?
-			var perpendicularDistance = MyUtils.GetRandomPerpendicularVector(ref playerNaturalGravity) * 400; //4km away
+            //TODO does perpendicularDistance maybe need to be normalised?
+            // TODO: use faction info from faction definition.
+            var perpendicularDistance = MyUtils.GetRandomPerpendicularVector(ref playerNaturalGravity) * 400; //4km away
 			var locationToSpawnPatrol = playerPos + perpendicularDistance + playerNaturalGravity * -200f; // 2km up
 			var naturalGravityAtSpawn = marsPlanet.GetGravityAtPoint(locationToSpawnPatrol);
 
@@ -82,7 +90,8 @@ namespace Scenario.Calpurnius
 			{
 				PrefabGrid backup = faction.Ships.GetBackupShip();
 				DuckUtils.SpawnInGravity(spawnLocation.Value, naturalGravityAtSpawn, RemoteControl.OwnerId,
-					backup.PrefabName, backup.InitialBeaconName);
+                    // TODO: use faction info from faction definition.
+                    backup.PrefabName, backup.InitialBeaconName);
 			}
 			else
 			{
