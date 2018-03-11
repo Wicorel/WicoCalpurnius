@@ -3,8 +3,19 @@ using System.Collections.Generic;
 using Sandbox.ModAPI;
 using VRage.Game.ModAPI;
 
+using Sandbox.Game.Entities;
+using Sandbox.Game.Gui;
+using Sandbox.ModAPI.Interfaces;
+using SpaceEngineers.Game.ModAPI;
+using VRage.Game;
+using VRage.Game.Entity;
+using VRageMath;
+
 namespace Scenario.Calpurnius
 {
+    // TODO: Need abtract base manager and have factions-specific base managers.
+    // OR have base manager enumerate through the factions..
+
 	public class BaseManager : ModSystemUpdatable
 	{
 		private readonly QueuedAudioSystem audioSystem;
@@ -38,9 +49,39 @@ namespace Scenario.Calpurnius
 
 		public override void GridInitialising(IMyCubeGrid grid)
 		{
-//			if (grid.IsStatic && grid.IsControlledByFaction("GCORP"))
-			{
-				var slimBlocks = new List<IMySlimBlock>();
+
+            /* Try to fix text not showing on text panels
+             * 
+             * (on further testing, panels are showing.. maybe Keen fixed this themselves?)
+             * 
+             * Saw on Rity's stream that they were NOT showing in all places.
+             * And on EpikTek's https://www.youtube.com/watch?v=CkpGGPZd78k
+             * */
+            var slimBlocks2 = new List<IMySlimBlock>();
+            grid.GetBlocks(slimBlocks2, b => b.FatBlock is IMyTextPanel);
+            foreach (var slim in slimBlocks2)
+            {
+                var textPanel = slim.FatBlock as IMyTextPanel;
+                bool bShow = textPanel.GetValueBool("ShowTextOnScreen");
+                //                bool bShow = textPanel.ShowOnScreen != VRage.Game.GUI.TextPanel.ShowTextOnScreenFlag.NONE;
+                if (bShow)
+                {
+                    textPanel.SetValue("ShowTextOnScreen", false);
+                    //                     textPanel.SetShowOnScreen(VRage.Game.GUI.TextPanel.ShowTextOnScreenFlag.NONE);
+                    textPanel.SetValue("ShowTextOnScreen", true);
+                    //                      textPanel.SetShowOnScreen(VRage.Game.GUI.TextPanel.ShowTextOnScreenFlag.PUBLIC);
+                }
+                else
+                {
+                    // TODO: go through entityIDs and fix up graphics references
+
+                }
+            }
+
+
+            //			if (grid.IsStatic && grid.IsControlledByFaction("GCORP"))
+            {
+                var slimBlocks = new List<IMySlimBlock>();
 				grid.GetBlocks(slimBlocks, b => b.FatBlock is IMyRemoteControl);
 				foreach (var slim in slimBlocks)
 				{
