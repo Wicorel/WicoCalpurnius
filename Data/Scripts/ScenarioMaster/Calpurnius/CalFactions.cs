@@ -20,6 +20,7 @@ namespace Scenario.Calpurnius
 
 		internal static void Init()
 		{
+            // Make scenario changes here.
 			// Register all factions here so we can look them up 
 			AllFactions.Add(Player.FactionId, Player);
 			AllFactions.Add(Gcorp.FactionId, Gcorp);
@@ -42,6 +43,9 @@ namespace Scenario.Calpurnius
 			return AllFactions.TryGetValue(factionId, out faction) && faction.IsNpc;
 		}
 	}
+
+
+    // TODO: Move these into factions-specific files..
 
 	internal class PlayerFaction : AbstractFaction
 	{
